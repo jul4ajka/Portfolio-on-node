@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+.logo-box {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/paralax.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.logo {
+    height: 180px;
+    width: 100%;
+    background-image: url(../img/logotipe.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+}
+
+.back-bird {
+    width: 960px;
+    height: 298px;
+    background-image: url(../img/logo.png);
+    background-size: 25% 25%;
+    background-repeat: no-repeat;
+    background-position: left;
+    position: absolute;
+    left: 50%;
+    margin-left: -480px;
+}
+
+.content {
+    width: 50vw;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-family: arial;
+}
+
+.content article h1 {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 24px;
+}
+
+.project-pics h1 {
+    display: flex;
+    justify-content: center;
+    font-family: Arial;
+    font-size: 48px;
+}
+
+.project-pics img {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 20px;
+    position: relative;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.3s ease-in-out;
+}
+
+.project-pics img.is-showing {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.project-pics {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+
+.large-window {
+  height: 640px;
+  
+  background-image: url(/img/model2.jpg);
+  background-size: 100% 100%;
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 100px;
+  border-radius: 50%; 
+}
