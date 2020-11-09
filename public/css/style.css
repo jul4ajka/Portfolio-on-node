@@ -1,7 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+		overflow-x: hidden;
+		font-family: sans-serif;
 }
 
 
@@ -64,9 +65,10 @@ body {
 }
 
 .project-pics img {
-    width: 400px;
-    height: 300px;
-    margin-bottom: 20px;
+    width: 23vw;
+    height: 15vw;
+    margin-bottom: 3vw;
+    margin-left: 3vw;
     position: relative;
     opacity: 0;
     transform: translateX(20px);
@@ -89,18 +91,52 @@ body {
 .row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between
+    /* justify-content: space-between; */
 }
 
 
 .large-window {
-  height: 640px;
-  
-  background-image: url(/img/model2.jpg);
-  background-size: 100% 100%;
-  background-position: center 0px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin-top: 100px;
-  border-radius: 50%; 
+    height: 45vw;
+    width: 45vw;
+    margin-left: 25vw;
+    background-image: url(../img/macbook\ wp.jpg);
+    background-size: 100% 100%;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 100px;
+    border-radius: 50%; 
 }
+
+footer {
+    width: 100vw;
+    height: 5vw;
+    margin-top: 10vw;
+    background-color: black;
+    font-family: Arial;
+    font-size: 1.5vw;
+    color: rgba(255, 255, 254, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .logo-box {
+        position: relative;
+        height: 43vh;
+        width: 100vw;
+        background-image: url(../img/paralax.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-attachment: fixed;
+        overflow: hidden;
+    }
+}
+
+.typewrite {
+	text-decoration: none;
+	color: black;
+	font-size: 1.8vw;
+} 
