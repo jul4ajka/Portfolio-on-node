@@ -1,142 +1,195 @@
 body {
-    margin: 0;
-    padding: 0;
-		overflow-x: hidden;
-		font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: sans-serif;
 }
 
-
 .logo-box {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../img/paralax.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.logo {
+  height: 180px;
+  width: 100%;
+  background-image: url(../img/logotipe.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+}
+
+.back-bird {
+  width: 960px;
+  height: 298px;
+  background-image: url(../img/logo.png);
+  background-size: 25% 25%;
+  background-repeat: no-repeat;
+  background-position: left;
+  position: absolute;
+  left: 50%;
+  margin-left: -480px;
+}
+
+.content {
+  width: 50vw;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  font-family: arial;
+}
+
+.content article h1 {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 24px;
+}
+
+.project-pics h1 {
+  display: flex;
+  justify-content: center;
+  font-family: Arial;
+  font-size: 48px;
+}
+
+.project-pics img {
+  width: 23vw;
+  height: 15vw;
+  margin-bottom: 3vw;
+  margin-left: 3vw;
+  position: relative;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 0.3s ease-in-out;
+}
+
+.project-pics img.is-showing {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.project-pics {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: auto;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+}
+
+.large-window {
+  height: 45vw;
+  width: 45vw;
+  margin-left: 25vw;
+  background-image: url(../img/macbook\ wp.jpg);
+  background-size: 100% 100%;
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 100px;
+  border-radius: 50%;
+}
+
+footer {
+  width: 100vw;
+  height: 5vw;
+  margin-top: 10vw;
+  background-color: black;
+  font-family: Arial;
+  font-size: 1.5vw;
+  color: rgba(255, 255, 254, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-box {
     position: relative;
-    height: 100vh;
+    height: 43vh;
     width: 100vw;
     background-image: url(../img/paralax.jpg);
-    background-size: 100% 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: fixed;
     overflow: hidden;
-}
-
-.logo {
-    height: 180px;
-    width: 100%;
-    background-image: url(../img/logotipe.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 50%;
-    margin-top: -50px;
-}
-
-.back-bird {
-    width: 960px;
-    height: 298px;
-    background-image: url(../img/logo.png);
-    background-size: 25% 25%;
-    background-repeat: no-repeat;
-    background-position: left;
-    position: absolute;
-    left: 50%;
-    margin-left: -480px;
-}
-
-.content {
-    width: 50vw;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    font-family: arial;
-}
-
-.content article h1 {
-    display: flex;
-    justify-content: center;
-    font-family: sans-serif;
-    font-size: 24px;
-}
-
-.project-pics h1 {
-    display: flex;
-    justify-content: center;
-    font-family: Arial;
-    font-size: 48px;
-}
-
-.project-pics img {
-    width: 23vw;
-    height: 15vw;
-    margin-bottom: 3vw;
-    margin-left: 3vw;
-    position: relative;
-    opacity: 0;
-    transform: translateX(20px);
-    transition: all 0.3s ease-in-out;
-}
-
-.project-pics img.is-showing {
-    opacity: 1;
-    transform: translateX(0px);
-}
-
-.project-pics {
-    display: flex;
-    flex-direction: column;
-    width: 80vw;
-    height: auto;
-    margin: 0 auto;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-between; */
-}
-
-
-.large-window {
-    height: 45vw;
-    width: 45vw;
-    margin-left: 25vw;
-    background-image: url(../img/macbook\ wp.jpg);
-    background-size: 100% 100%;
-    background-position: center 0px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin-top: 100px;
-    border-radius: 50%; 
-}
-
-footer {
-    width: 100vw;
-    height: 5vw;
-    margin-top: 10vw;
-    background-color: black;
-    font-family: Arial;
-    font-size: 1.5vw;
-    color: rgba(255, 255, 254, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media screen and (max-width: 768px) {
-    .logo-box {
-        position: relative;
-        height: 43vh;
-        width: 100vw;
-        background-image: url(../img/paralax.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-attachment: fixed;
-        overflow: hidden;
-    }
+  }
 }
 
 .typewrite {
-	text-decoration: none;
-	color: black;
-	font-size: 1.8vw;
-} 
+  text-decoration: none;
+  color: black;
+  font-size: 1.8vw;
+}
+
+/* Preloader */
+
+#loaded_hiding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  height: 100vh;
+  width: 100vw;
+}
+
+#loaded {
+  display: none;
+}
+
+.lds-ring {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid black;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: darkgray transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
