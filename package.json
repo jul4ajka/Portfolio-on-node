@@ -10,7 +10,7 @@
   "author": "Julia Chayka",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.17.3"
   },
   "engines": {
     "node": "8.10.0",
